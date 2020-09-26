@@ -4,7 +4,8 @@
   "description": "Testing with Percy",
   "main": "index.js",
   "scripts": {
-    "test": "npx percy exec -- wdio wdio.conf.js"
+    "test": "npx percy exec -- wdio wdio.conf.js",
+    "serve": "npx http-server ./src/DE/"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "@wdio/spec-reporter": "^6.4.7",
     "@wdio/sync": "^6.5.0",
     "chromedriver": "^85.0.1",
+    "http-server": "^0.12.3",
     "wdio-chromedriver-service": "^6.0.4",
     "webdriverio": "^6.5.2"
   }
