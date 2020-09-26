@@ -15,7 +15,7 @@ jobs:
           steps:
             - run: npm install
             - run: npm run serve
-            - run: npm run test
+            - run: npm run test:local-server 
 workflows:
   build-and-test:
     jobs:

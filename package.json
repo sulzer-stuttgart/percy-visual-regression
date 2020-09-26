@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx percy exec -- wdio wdio.conf.js",
-    "serve": "npx http-server ./src/DE/"
+    "test:local-server": "npx http-server ./src/DE/& npx percy exec -- wdio wdio.conf.js"
   },
   "repository": {
     "type": "git",
