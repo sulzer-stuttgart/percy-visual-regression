@@ -4,7 +4,6 @@ describe('webdriver.io page', () => {
     it('should see google maps page', async () => {
         await browser.url('http://localhost:8080/Map.html')
         await browser.pause(3000);
-        const elem = $('#map')
         await percySnapshot(browser, 'Google maps page', { widths: [480, 768, 992, 1200] })
 
         // with percyCSS we can exclude elements from snapshot
