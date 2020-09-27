@@ -4,7 +4,8 @@
   "description": "Testing with Percy",
   "main": "index.js",
   "scripts": {
-    "test": "npx percy exec -- wdio wdio.conf.js",
+    "test": "npx wdio wdio.conf.js",
+    "test:percy": "npx percy exec -- wdio wdio.conf.js",
     "test:local-server": "npx http-server ./src/DE/& npx percy exec -- wdio wdio.conf.js"
   },
   "repository": {
